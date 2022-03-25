@@ -10,8 +10,9 @@
 # Ejercicios de práctica numérica
 
 # Condicionales anidados
-numero_1 = 7
-numero_2 = -2
+
+numero_1 = 4
+numero_2 = 4
 
 # Verifique si el numero_1 es mayor a 5
 #   --> En caso afirmativo, verifique si el numero_2
@@ -23,9 +24,19 @@ numero_2 = -2
 #       --> En caso afirmativo imprima en pantalla "Resp=3"
 #       --> En caso negativo imprima en pantalla "Resp=4"
 
+if (numero_1 > 5):
+    if (numero_2 > 0):
+        print ("Resp=1")
+    else:
+        print("Resp=2")
+elif (numero_2 > 5):
+    print ("Resp=3")
+else:
+    print("Resp=4")
+
 # Verifique la calificación de un estudiante según su
 # puntaje en un examen
-puntaje = 70
+puntaje = 61
 
 # Si el puntaje es mayor igual a 90 --> imprimir A
 # Si el puntaje es mayor igual a 80 --> imprimir B
@@ -35,3 +46,15 @@ puntaje = 70
 
 # Debe imprimir en pantalla la calificacion
 # Utilizar "if" anidados
+
+if (puntaje >= 60):
+    if (puntaje >= 90):
+        print ("A")
+    elif (puntaje >= 80):
+        print ("B")
+    elif (puntaje >= 70):
+        print ("C")
+    else:
+        print ("D")
+else:
+    print("F")
