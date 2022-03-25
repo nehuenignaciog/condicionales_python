@@ -20,11 +20,11 @@ numero_2 = int(input('Ingrese el segundo número:\n'))
 # Imprima en pantalla según corresponda
 
 if (numero_1 > numero_2):
-    print ("El primer número  ({}) es mayor que el segundo ({}).".format(numero_1,numero_2))
-elif (numero_2 > numero_1 ): 
-    print ("El segundo número ({}) es mayor que el primero ({}).".format(numero_2,numero_1))
+    print ("El primer número es mayor ({} > {}).".format(numero_1, numero_2))
+elif (numero_2 > numero_1):
+    print ("El segundo número es mayor ({} > {}).".format(numero_2, numero_1))
 else:
-    print ("El primer número ({})  y segundo  ({})  son iguales. ".format(numero_1,numero_2))
+    print ("Los números son iguales ({} = {}).".format(numero_1, numero_2))
 # Verifique si el numero_1 positivo, negativo o cero
 # Imprima el resultado en cada caso
 
@@ -33,7 +33,7 @@ if (numero_1 > 0):
     print ("El primer numero ({}) es positivo".format(numero_1))
 elif (numero_1 < 0):
     print ("El primer numero ({}) es negativo".format(numero_1))
-else: 
+else:
     print ("El primer numero ({}) es cero".format(numero_1))
 
 
@@ -41,7 +41,7 @@ else:
 # Imprima en pantalla si se cumple o no la condición
 
 if (numero_1 > 0 and numero_1 < 100):
-    print("El primer número cumple la condicion (0 < {} < 100). ".format(numero_1))
+    print("Cumple (0 < {} < 100). ".format(numero_1))
 else:
     print ("El primer número no cumple la condición.")
 
@@ -50,6 +50,6 @@ else:
 # Imprima en pantalla si se cumple o no la condición
 
 if (numero_1 < 10 or numero_2 > -2):
-    print("El primer número  es menor a 10 ({} < 10) o el segundo numero es mayor a -2 ({} > -2). ".format(numero_1,numero_2))
+    print("Cumple ({} < 10) ó ({} > -2). ".format(numero_1, numero_2))
 else:
     print ("El primer número no cumple la condición.")
