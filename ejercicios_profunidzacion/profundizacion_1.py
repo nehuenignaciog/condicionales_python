@@ -22,3 +22,7 @@ si el resultado es positivo, negativo o cero.
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+# Solicito el ingreso de dos números.
+
+numero_1 = 
