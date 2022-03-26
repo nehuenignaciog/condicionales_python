@@ -4,7 +4,7 @@
 # Autor: Inove Coding School
 # Version: 2.0
 
-# NOTA: 
+# NOTA:
 # Estos ejercicios son de mayor dificultad que los de clase y práctica.
 # Están pensados para aquellos con conocimientos previo o que dispongan
 # de mucho más tiempo para abordar estos temas por su cuenta.
@@ -56,11 +56,12 @@ elif (temperatura_1 > temperatura_2 and temperatura_3 > temperatura_2):
 else:
     print ("La tercer temperatura es la mínima ({})".format(temperatura_3))
 
-# Calculo el promedio 
+# Calculo el promedio
 
 suma = temperatura_1 + temperatura_2 + temperatura_3
 
 promedio = suma / 3
 
 # Imprimo promedio
+
 print ("El promedio es: {}".format(promedio))
