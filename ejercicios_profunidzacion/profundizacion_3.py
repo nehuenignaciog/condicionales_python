@@ -31,36 +31,50 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
 
-temperatura_1 = int(input("Ingrese la  primer temperatura:\n"))
+temperatura_1 = float(input("Ingrese la  primer temperatura:\n"))
 
-temperatura_2 = int(input("Ingrese la Segunda temperatura:\n"))
+temperatura_2 = float(input("Ingrese la Segunda temperatura:\n"))
 
-temperatura_3 = int(input("Ingrese la Tercer temperatura:\n"))
+temperatura_3 = float(input("Ingrese la Tercer temperatura:\n"))
 
 
-# Imprimo la temperatura máxima
+# Calculo máxima y mínima
 
 if (temperatura_2 < temperatura_1 and temperatura_3 < temperatura_1):
-    print ("La primera temperatura es la máxima ({})".format(temperatura_1))
+    maxima = temperatura_1
+    if (temperatura_2 < temperatura_3):
+        minima = temperatura_2
+    else:
+        minima = temperatura_3
+
 elif (temperatura_1 < temperatura_2 and temperatura_3 < temperatura_2):
-    print ("La segunda temperatura es la máxima ({})".format(temperatura_2))
+    maxima = temperatura_2
+    if (temperatura_1 < temperatura_3):
+        minima = temperatura_1
+    else:
+        minima = temperatura_3
+        
 else:
-    print ("La tercer temperatura es la máxima ({})".format(temperatura_3))
+    maxima = temperatura_3
+    if (temperatura_1 < temperatura_2):
+        minima = temperatura_1
+    else:
+        minima = temperatura_2
 
-# Imprimo la temperatura mínima
-
-if (temperatura_2 > temperatura_1 and temperatura_3 > temperatura_1):
-    print ("La primera temperatura es la máxima ({})".format(temperatura_1))
-elif (temperatura_1 > temperatura_2 and temperatura_3 > temperatura_2):
-    print ("La segunda temperatura es la máxima ({})".format(temperatura_2))
-else:
-    print ("La tercer temperatura es la mínima ({})".format(temperatura_3))
 
 # Calculo el promedio
 
 suma = temperatura_1 + temperatura_2 + temperatura_3
 
 promedio = suma / 3
+
+# Imprimo la temperatura máxima
+
+print ("Temperatura máxima: {}".format(maxima))
+
+# Imprimo la temperatura mínima
+
+print ("Temperatura mínima: {}".format(minima))
 
 # Imprimo promedio
 
