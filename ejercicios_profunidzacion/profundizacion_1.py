@@ -4,7 +4,7 @@
 # Autor: Inove Coding School
 # Version: 2.0
 
-# NOTA: 
+# NOTA:
 # Estos ejercicios son de mayor dificultad que los de clase y práctica.
 # Están pensados para aquellos con conocimientos previo o que dispongan
 # de mucho más tiempo para abordar estos temas por su cuenta.
@@ -32,7 +32,7 @@ numero_2 = int(input("Ingrese el Segundo número:\n"))
 # Calculo la diferencia
 resultado = numero_1 - numero_2
 
-#Evalúo signo del  resultado
+# Evalúo signo del  resultado
 if (resultado > 0):
     print ("El resultado ({}) es positivo".format(resultado))
 elif (resultado < 0):

@@ -33,14 +33,14 @@ else:
 # Imprima en pantalla según corresponda
 
 
-numero_1= int(texto_1)
-numero_2= int(texto_2)
+numero_1 = int(texto_1)
+numero_2 = int(texto_2)
 
 if (numero_1 > numero_2):
     print ("Mayor: numero_1 ({} > {}).".format(numero_1, numero_2))
 elif (numero_2 > numero_1):
     print ("Mayor: numero_2 ({} > {}).".format(numero_2, numero_1))
-else:   
+else:
     print ("Números iguales ({} = {}).".format(numero_1, numero_2))
 
 
